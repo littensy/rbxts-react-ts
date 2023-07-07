@@ -1,4 +1,4 @@
-# `@rbxts/react-ts`
+# [`@rbxts/react-ts`](https://www.npmjs.com/package/@rbxts/react-ts)
 
 This package exports `react` and `roact-compat` for use in TypeScript projects.
 
@@ -18,8 +18,7 @@ pnpm add @rbxts/roact@npm:@rbxts/react-ts
 Make sure the following alias or something similar is in your `package.json`:
 
 ```json
-dependencies: {
-    // ...
+"dependencies": {
     "@rbxts/roact": "npm:@rbxts/react-ts",
 }
 ```

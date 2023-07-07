@@ -1,10 +1,14 @@
 # [`@rbxts/react-ts`](https://www.npmjs.com/package/@rbxts/react-ts)
 
-This package exports `react` and `roact-compat` for use in TypeScript projects.
-
-To get this package working, it needs the `@rbxts/roact` alias so that the Roblox-TS JSX transformer can use this package instead of the default `roact` package.
+This package combines and re-exports `react` and `roact-compat` for use in Roblox TypeScript projects.
 
 ## Installation
+
+### React + RoactCompat
+
+For this package to work, it needs the `@rbxts/roact` alias so that Roblox-TS can use this package for your TSX files.
+
+You can install with an alias like so:
 
 ```bash
 # recommended
@@ -23,9 +27,21 @@ Make sure the following alias or something similar is in your `package.json`:
 }
 ```
 
+### ReactRoblox
+
+You can install `@rbxts/react-roblox` to render React components with `createRoot` instead of `Roact.mount`.
+
+```bash
+npm install @rbxts/react-roblox
+yarn add @rbxts/react-roblox
+pnpm add @rbxts/react-roblox
+```
+
 ## Compatibility
 
-Installing this package will install React, ReactRoblox, etc. with the other packages under `@rbxts` in ReplicatedStorage. They may be accessed in Luau via `require(script.Parent...Parent.MODULE)` depending on your project structure.
+Installing this package will install React, ReactRoblox, etc. directly under the `@rbxts` folder in located ReplicatedStorage.
+
+If your package depends on React packages, they may be imported in Luau via `require(script.Parent...Parent.MODULE)` or `require(...node_modules["@rbxts"].MODULE)` depending on your project structure.
 
 <details>
     <summary>See explorer view</summary>

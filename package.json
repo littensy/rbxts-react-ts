@@ -1,0 +1,22 @@
+{
+	"name": "@rbxts/react-ts",
+	"version": "0.1.0",
+	"author": "littensy",
+	"license": "MIT",
+	"main": "src/init.lua",
+	"types": "src/index.d.ts",
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/littensy/rbxts-react"
+	},
+	"bugs": {
+		"url": "https://github.com/littensy/rbxts-react/issues"
+	},
+	"dependencies": {
+		"@rbxts/react-internal": "^0.1.0",
+		"@rbxts/roact-compat-internal": "^0.1.0"
+	}
+}

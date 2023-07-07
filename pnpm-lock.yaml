@@ -1,0 +1,97 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@rbxts/react-internal':
+    specifier: ^0.1.0
+    version: 0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/shared-internal@0.1.1)
+  '@rbxts/roact-compat-internal':
+    specifier: ^0.1.0
+    version: 0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/react-internal@0.1.0)(@rbxts/react-roblox-internal@0.1.0)(@rbxts/shared-internal@0.1.1)
+
+packages:
+
+  /@rbxts/luau-polyfill-internal@1.2.3-ts.0:
+    resolution: {integrity: sha512-LG1h4uf+MpMxu6RfOLowRe+NOs2SWXzCmYd49WvfR8ZKVUNHvT0BeVIL9rS9q//mTlz8BXDyl5EVIyjnKgsekA==}
+    dev: false
+
+  /@rbxts/promise-forward@1.0.4:
+    resolution: {integrity: sha512-otKFEJ5kKxow+m3/tp37WtS3GXz8X9jbaqCKJUvHW33zj+knByTFSwmZ0kBNJe8Oi/SarXaCvvNVYVe7JkbWWw==}
+    dev: false
+
+  /@rbxts/react-internal@0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/shared-internal@0.1.1):
+    resolution: {integrity: sha512-7fMvP4Ug/JshTt7+gbs/7+ZQr6ISWVrnlZ4J5O4lg4z57d1Mnaz6XrjapQ/iYx4mqbo+wufqVVCBvOTyMy48wg==}
+    peerDependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+      '@rbxts/shared-internal': ^0.1.1
+    dependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+      '@rbxts/shared-internal': 0.1.1(@rbxts/luau-polyfill-internal@1.2.3-ts.0)
+    dev: false
+
+  /@rbxts/react-reconciler-internal@0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/promise-forward@1.0.4)(@rbxts/react-internal@0.1.0)(@rbxts/scheduler-internal@0.1.0)(@rbxts/shared-internal@0.1.1):
+    resolution: {integrity: sha512-FxnVpnYsMi458hBBfMLW2iETx+4W7XwtTDf5bfGNYjMI6R+a+GwbrHpI4+cOpF8RiblfzhOh66QnJq68DmBzIA==}
+    peerDependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+      '@rbxts/promise-forward': ^1.0.4
+      '@rbxts/react-internal': ^0.1.0
+      '@rbxts/scheduler-internal': ^0.1.0
+      '@rbxts/shared-internal': ^0.1.1
+    dependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+      '@rbxts/promise-forward': 1.0.4
+      '@rbxts/react-internal': 0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/shared-internal@0.1.1)
+      '@rbxts/scheduler-internal': 0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/shared-internal@0.1.1)
+      '@rbxts/shared-internal': 0.1.1(@rbxts/luau-polyfill-internal@1.2.3-ts.0)
+    dev: false
+
+  /@rbxts/react-roblox-internal@0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/react-internal@0.1.0)(@rbxts/react-reconciler-internal@0.1.0)(@rbxts/scheduler-internal@0.1.0)(@rbxts/shared-internal@0.1.1):
+    resolution: {integrity: sha512-psgLnDZrRoI5GiNHS6uWVdpRmxh6ukOhKHKYYz/evLAEAy5BS88xYwHEvxplFF1JPP8Y92Hu9L/Di0h2vtNqlQ==}
+    peerDependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+      '@rbxts/react-internal': ^0.1.0
+      '@rbxts/react-reconciler-internal': ^0.1.0
+      '@rbxts/scheduler-internal': ^0.1.0
+      '@rbxts/shared-internal': ^0.1.1
+    dependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+      '@rbxts/react-internal': 0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/shared-internal@0.1.1)
+      '@rbxts/react-reconciler-internal': 0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/promise-forward@1.0.4)(@rbxts/react-internal@0.1.0)(@rbxts/scheduler-internal@0.1.0)(@rbxts/shared-internal@0.1.1)
+      '@rbxts/scheduler-internal': 0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/shared-internal@0.1.1)
+      '@rbxts/shared-internal': 0.1.1(@rbxts/luau-polyfill-internal@1.2.3-ts.0)
+    dev: false
+
+  /@rbxts/roact-compat-internal@0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/react-internal@0.1.0)(@rbxts/react-roblox-internal@0.1.0)(@rbxts/shared-internal@0.1.1):
+    resolution: {integrity: sha512-Yz+zsMD7kUQ3cZ6zd8TqD7sk4QYwkPmEq/gIXKrfIrSBwfQnWlJd9UZEL655Zqqw11xKzVsJrZPGk7I/JYdKhQ==}
+    peerDependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+      '@rbxts/react-internal': ^0.1.0
+      '@rbxts/react-roblox-internal': ^0.1.0
+      '@rbxts/shared-internal': ^0.1.1
+    dependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+      '@rbxts/react-internal': 0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/shared-internal@0.1.1)
+      '@rbxts/react-roblox-internal': 0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/react-internal@0.1.0)(@rbxts/react-reconciler-internal@0.1.0)(@rbxts/scheduler-internal@0.1.0)(@rbxts/shared-internal@0.1.1)
+      '@rbxts/shared-internal': 0.1.1(@rbxts/luau-polyfill-internal@1.2.3-ts.0)
+    dev: false
+
+  /@rbxts/scheduler-internal@0.1.0(@rbxts/luau-polyfill-internal@1.2.3-ts.0)(@rbxts/shared-internal@0.1.1):
+    resolution: {integrity: sha512-KSUiJCb7F6aHzXnd/6c8FmN2ZRKpfj2vEUiIds2VsV6hGeWxKaV4dj7kWPgZfIC2yTSYVQFIbzDcpg4/EdERXQ==}
+    peerDependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+      '@rbxts/shared-internal': ^0.1.1
+    dependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+      '@rbxts/shared-internal': 0.1.1(@rbxts/luau-polyfill-internal@1.2.3-ts.0)
+    dev: false
+
+  /@rbxts/shared-internal@0.1.1(@rbxts/luau-polyfill-internal@1.2.3-ts.0):
+    resolution: {integrity: sha512-nEsblOmGlWk7wTWmqtvhOljKGJGqgtthGbWGH2LdRX4VNMIEK3srsxPreUkHKhKdqWB15zQ0RzZCRe326jyVNw==}
+    peerDependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+    dependencies:
+      '@rbxts/luau-polyfill-internal': 1.2.3-ts.0
+    dev: false

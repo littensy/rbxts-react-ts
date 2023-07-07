@@ -1,11 +1,9 @@
-local React = require(script.Parent.React)
-local RoactCompat = require(script.Parent.RoactCompat)
+local Packages = script.Parent :: any
 
-local exports = {}
+local React = require(Packages.React)
+local RoactCompat = require(Packages.RoactCompat)
 
-for key, value in React do
-	exports[key] = value
-end
+local exports = table.clone(React)
 
 for key, value in RoactCompat do
 	exports[key] = value

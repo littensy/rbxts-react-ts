@@ -17,6 +17,8 @@
 	},
 	"devDependencies": {
 		"@rbxts/compiler-types": "^2.1.1-types.0",
+		"@rbxts/react-internal": "^0.1.0",
+		"@rbxts/roact-compat-internal": "^0.1.0",
 		"@rbxts/types": "^1.0.704",
 		"@typescript-eslint/eslint-plugin": "^5.60.1",
 		"@typescript-eslint/parser": "^5.60.1",
@@ -28,7 +30,7 @@
 		"roblox-ts": "^2.1.1",
 		"typescript": "^5.1.6"
 	},
-	"dependencies": {
+	"peerDependencies": {
 		"@rbxts/react-internal": "^0.1.0",
 		"@rbxts/roact-compat-internal": "^0.1.0"
 	}

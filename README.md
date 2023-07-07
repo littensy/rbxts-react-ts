@@ -7,17 +7,20 @@ To get this package working, it needs the `@rbxts/roact` alias so that the Roblo
 ## Installation
 
 ```bash
+# recommended
 npm install @rbxts/roact@npm:@rbxts/react-ts
-pnpm add @rbxts/roact@npm:@rbxts/react-ts
 yarn add @rbxts/roact@npm:@rbxts/react-ts
+
+# may cause issues
+pnpm add @rbxts/roact@npm:@rbxts/react-ts
 ```
 
-Make sure the following alias is in your `package.json`:
+Make sure the following alias or something similar is in your `package.json`:
 
 ```json
 dependencies: {
     // ...
-    "@rbxts/roact": "npm:@rbxts/react-ts@^0.1.0",
+    "@rbxts/roact": "npm:@rbxts/react-ts",
 }
 ```
 

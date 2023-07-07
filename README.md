@@ -36,4 +36,4 @@ Installing this package will install React, ReactRoblox, etc. with the other pac
 
 Types are derived from [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/v17/index.d.ts).
 
-Dependencies of this package were published from [jsdotlua/react-lua](https://github.com/jsdotlua/react-lua).
+Dependencies of this package were published from [littensy/react-lua](https://github.com/littensy/rbxts-react), which is a fork of [jsdotlua/react-lua](https://github.com/jsdotlua/react-lua).

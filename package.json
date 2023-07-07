@@ -15,6 +15,19 @@
 	"bugs": {
 		"url": "https://github.com/littensy/rbxts-react/issues"
 	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "^2.1.1-types.0",
+		"@rbxts/types": "^1.0.704",
+		"@typescript-eslint/eslint-plugin": "^5.60.1",
+		"@typescript-eslint/parser": "^5.60.1",
+		"eslint": "^8.44.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-roblox-ts": "^0.0.35",
+		"prettier": "^2.8.8",
+		"roblox-ts": "^2.1.1",
+		"typescript": "^5.1.6"
+	},
 	"dependencies": {
 		"@rbxts/react-internal": "^0.1.0",
 		"@rbxts/roact-compat-internal": "^0.1.0"

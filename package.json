@@ -29,7 +29,7 @@
 		"typescript": "^5.1.6"
 	},
 	"dependencies": {
-		"@rbxts/react-internal": "^0.2.0",
-		"@rbxts/roact-compat-internal": "^0.2.0"
+		"@rbxts/react-internal": "^0.2.1",
+		"@rbxts/roact-compat-internal": "^0.3.0"
 	}
 }

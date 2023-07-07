@@ -24,6 +24,15 @@ dependencies: {
 }
 ```
 
+## Compatibility
+
+Installing this package will install React, ReactRoblox, etc. with the other packages under `@rbxts` in ReplicatedStorage. They may be accessed in Luau via `require(script.Parent...Parent.MODULE)` depending on your project structure.
+
+<details>
+    <summary>See explorer view</summary>
+    <img src="images/compatibility.png" width="200">
+</details>
+
 ## Sources
 
 Types are derived from [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/v17/index.d.ts).

@@ -35,7 +35,13 @@ declare namespace Roact {
 
 // Props
 declare namespace Roact {
-	export type PropsWithChildren<P = {}> = P & { [Roact.Children]?: Roact.Children };
+	export type PropsWithChildren<P = {}> = P & {
+		/**
+		 * @deprecated use `children` instead
+		 */
+		[Roact.Children]?: Roact.Children;
+		children?: Roact.Children;
+	};
 }
 
 // Component

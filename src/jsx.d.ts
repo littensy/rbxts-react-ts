@@ -37,7 +37,6 @@ declare global {
 			 */
 			Key?: string | number;
 			key?: string | number;
-			children?: JsxNode;
 			_jsx_children?: JsxNode;
 		}
 

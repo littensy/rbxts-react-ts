@@ -32,7 +32,12 @@ declare global {
 		}
 
 		interface IntrinsicAttributes extends Roact.PropsWithChildren {
+			/**
+			 * @deprecated use `key` instead
+			 */
 			Key?: string | number;
+			key?: string | number;
+			children?: JsxNode;
 			_jsx_children?: JsxNode;
 		}
 

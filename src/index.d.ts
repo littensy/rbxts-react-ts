@@ -199,7 +199,7 @@ declare namespace Roact {
 // Utility Types
 declare namespace Roact {
 	export type BindingFunction<T> = (newVal: T) => void;
-	export type RefPropertyOrFunction<T extends Instance> = Roact.Ref<T> | ((rbx: T) => void);
+	export type RefPropertyOrFunction<T extends Instance> = Roact.Ref<T>;
 	export interface RenderablePropsClass<P> {
 		new (props: P): {
 			render(): Element | undefined;
@@ -232,7 +232,11 @@ declare namespace Roact {
 		JsxInstanceProperties<T> & {
 			Event?: Roact.JsxInstanceEvents<T>;
 			Change?: Roact.JsxInstanceChangeEvents<T>;
+			/**
+			 * @deprecated use `ref` instead
+			 */
 			Ref?: Roact.RefPropertyOrFunction<T>;
+			ref?: Roact.RefPropertyOrFunction<T>;
 		};
 }
 

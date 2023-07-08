@@ -126,9 +126,9 @@
     "@rbxts/shared-internal" "^0.2.0"
 
 "@rbxts/react-roblox@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@rbxts/react-roblox/-/react-roblox-0.1.0.tgz#e774a1e3ddb5bdd3e29b518b8c424ca94ee9e519"
-  integrity sha512-RIb+G0r9aaGdUWB+SuNKEm0GVVwN0r4nFdDx3Z+QcqOmNGJ1nyUdaQ8S6PtYhypNCePH/mcy7p1FaDavvlv2Gg==
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@rbxts/react-roblox/-/react-roblox-0.1.1.tgz#2a3bb1bb0226f1bd832b71cf422140c87f06edeb"
+  integrity sha512-TIViS38pKuJmydW9QhzNwfINkk3lATByEk/7aR3lc/PwiqFBHQA4QVrrl5IspZnRMRvQanrYC9AjZHcYroTK2g==
   dependencies:
     "@rbxts/luau-polyfill-internal" "1.2.3-ts.0"
     "@rbxts/react-internal" "^0.2.1"

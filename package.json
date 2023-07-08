@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/react-ts",
-	"version": "0.6.0",
+	"version": "0.7.0",
 	"author": "littensy",
 	"license": "MIT",
 	"main": "src/init.lua",

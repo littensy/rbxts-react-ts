@@ -48,6 +48,7 @@ declare namespace Roact {
 declare namespace Roact {
 	export type HostComponent = keyof CreatableInstances;
 	export type FunctionComponent<P = {}> = (props: Roact.PropsWithChildren<P>) => Roact.Element;
+	export type ExoticComponent<P = {}> = FunctionComponent<P>;
 	export type AnyComponent = Roact.Component | Roact.FunctionComponent | Roact.HostComponent;
 	export interface ComponentConstructor<P = {}, S = {}> {
 		new (props: P): Roact.Component<P, S>;
@@ -484,6 +485,12 @@ declare namespace Roact {
 
 // React API
 declare namespace Roact {
+	type ComponentClass<P> = ComponentConstructor<P>;
+
+	type ComponentType<P = {}> = ComponentClass<P> | FunctionComponent<P>;
+
+	type ComponentProps<T extends ComponentType<any>> = T extends ComponentType<infer P> ? P : never;
+
 	function memo<P extends object>(
 		Component: FunctionComponent<P>,
 		propsAreEqual?: (
@@ -491,6 +498,57 @@ declare namespace Roact {
 			nextProps: Readonly<PropsWithChildren<P>>,
 		) => boolean,
 	): FunctionComponent<P>;
+
+	function memo<T extends ComponentType<any>>(
+		Component: T,
+		propsAreEqual?: (prevProps: Readonly<ComponentProps<T>>, nextProps: Readonly<ComponentProps<T>>) => boolean,
+	): ExoticComponent<ComponentProps<T>>;
+
+	type LazyExoticComponent<T extends ComponentType<any>> = ExoticComponent<ComponentProps<T>> & {
+		readonly _result: T;
+	};
+
+	function lazy<T extends ComponentType<any>>(factory: () => Promise<{ default: T }>): LazyExoticComponent<T>;
+
+	const StrictMode: ExoticComponent<PropsWithChildren>;
+
+	interface SuspenseProps extends PropsWithChildren {
+		/** A fallback react tree to show when a Suspense child (like React.lazy) suspends */
+		fallback?: Roact.Element;
+	}
+
+	/**
+	 * This feature is not yet available for server-side rendering.
+	 * Suspense support will be added in a later release.
+	 */
+	const Suspense: ExoticComponent<SuspenseProps>;
+
+	export interface SchedulerInteraction {
+		__count: number;
+		id: number;
+		name: string;
+		timestamp: number;
+	}
+
+	/**
+	 * {@link https://react.dev/reference/react/Profiler#onrender-callback Profiler API}}
+	 */
+	type ProfilerOnRenderCallback = (
+		id: string,
+		phase: "mount" | "update",
+		actualDuration: number,
+		baseDuration: number,
+		startTime: number,
+		commitTime: number,
+		interactions: Set<SchedulerInteraction>,
+	) => void;
+
+	interface ProfilerProps extends PropsWithChildren {
+		id: string;
+		onRender: ProfilerOnRenderCallback;
+	}
+
+	const Profiler: ExoticComponent<ProfilerProps>;
 }
 
 export = Roact;

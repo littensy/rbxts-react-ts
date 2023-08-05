@@ -531,7 +531,7 @@ declare namespace Roact {
 	}
 
 	/**
-	 * {@link https://react.dev/reference/react/Profiler#onrender-callback Profiler API}}
+	 * {@link https://react.dev/reference/react/Profiler#onrender-callback Profiler API}
 	 */
 	type ProfilerOnRenderCallback = (
 		id: string,

@@ -13,12 +13,9 @@ For this package to work, it needs the `@rbxts/roact` alias so that Roblox-TS ca
 You can install with an alias like so:
 
 ```bash
-# recommended
 npm install @rbxts/roact@npm:@rbxts/react-ts@latest
 yarn add @rbxts/roact@npm:@rbxts/react-ts@latest
-
-# may cause issues
-pnpm add @rbxts/roact@npm:@rbxts/react-ts@latest
+pnpm add @rbxts/roact@npm:@rbxts/react-ts@latest # SEE NOTE BELOW
 ```
 
 Make sure the following alias or something similar is in your `package.json`:
@@ -27,6 +24,14 @@ Make sure the following alias or something similar is in your `package.json`:
 "dependencies": {
     "@rbxts/roact": "npm:@rbxts/react-ts",
 }
+```
+
+#### ⚠️ Note for pnpm users
+
+PNPM symlinks packages by default, which doesn't work well with Rojo. You can disable this behavior by adding the following to your `.npmrc`:
+
+```properties
+node-linker=hoisted
 ```
 
 ### 📎 ReactRoblox

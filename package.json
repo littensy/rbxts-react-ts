@@ -10,10 +10,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/littensy/rbxts-react"
+		"url": "https://github.com/littensy/rbxts-react-ts"
 	},
 	"bugs": {
-		"url": "https://github.com/littensy/rbxts-react/issues"
+		"url": "https://github.com/littensy/rbxts-react-ts/issues"
 	},
 	"devDependencies": {
 		"@rbxts/compiler-types": "^2.1.1-types.0",

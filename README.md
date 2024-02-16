@@ -4,6 +4,9 @@ To allow React in Roblox-TS, this package combines `jsdotlua/react` and `jsdotlu
 
 The package also needs to be installed with an alias to trick the compiler into using this package instead of the _actual_ Roact package.
 
+> [!IMPORTANT]
+> This package is superseded by [littensy/rbxts-react](https://github.com/littensy/rbxts-react).
+
 ## 📦 Installation
 
 ### ⚛️ React for Roblox-TS
